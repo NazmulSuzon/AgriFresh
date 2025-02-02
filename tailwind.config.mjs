@@ -13,5 +13,30 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          ...require("daisyui/src/theming/themes")["light"],
+          "primary": "#80B500",
+          "secondary": "teal",
+          "info": "#071C1F",
+
+          ".btn-primary":{
+            "color" : "#fff"
+          },
+
+          ".btn-outline.btn-primary:hover":{
+            "color" : "#fff"
+          }
+        },
+      },
+      "cupcake",
+      "light"
+    ],
+  },
 };
