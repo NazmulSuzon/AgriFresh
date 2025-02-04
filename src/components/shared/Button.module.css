@@ -1,0 +1,12 @@
+.button{
+    box-shadow: inset 0 0 0 0 black;
+    background-color: #80B500;
+    padding: 20px 40px 20px 40px;
+    transition: ease-out 0.8s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.button:hover{
+    box-shadow: inset 320px 0 0 0 white!important;
+    color: black!important;
+}

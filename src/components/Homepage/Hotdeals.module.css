@@ -1,0 +1,14 @@
+.zoom {
+    transition: transform .2s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .zoom img {
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.5s ease-in-out;
+  }
+  
+  .zoom:hover img{
+    transform: scale(1.1);
+  }
