@@ -5,25 +5,25 @@ const productData = {
   "Food & Drinks": [
     {
       id: 1,
-      name: "Fresh Juice",
+      name: "Papaya",
       price: "$15.00",
       image: "assets/products/foodDrinks/1.webp",
     },
     {
       id: 2,
-      name: "Tasty Cake",
+      name: "Fresh Berries",
       price: "$25.00",
       image: "assets/products/foodDrinks/2.webp",
     },
     {
       id: 3,
-      name: "Delicious Pizza",
+      name: "Mangosteen",
       price: "$49.00",
       image: "assets/products/foodDrinks/3.webp",
     },
     {
       id: 4,
-      name: "Healthy Salad",
+      name: "Broccoli",
       price: "$30.00",
       image: "assets/products/foodDrinks/4.webp",
     },
@@ -33,51 +33,103 @@ const productData = {
       id: 5,
       name: "Chocolate Cake",
       price: "$40.00",
-      image: "assets/products/breadCake/1.webp",
+      image: "assets/products/breadCake/6.jpg",
     },
     {
       id: 6,
       name: "Blueberry Muffin",
       price: "$10.00",
-      image: "assets/products/breadCake/2.webp",
+      image: "assets/products/breadCake/2.jpg",
     },
     {
       id: 7,
       name: "Croissant",
       price: "$5.00",
-      image: "assets/products/breadCake/3.webp",
+      image: "assets/products/breadCake/5.jpg",
     },
     {
       id: 8,
       name: "French Baguette",
       price: "$12.00",
-      image: "assets/products/breadCake/4.webp",
+      image: "assets/products/breadCake/4.jpg",
     },
   ],
-  "Snacks & Chips": [
+  "Dried Foods": [
     {
       id: 9,
       name: "Potato Chips",
       price: "$8.00",
-      image: "assets/products/snacksChips/1.webp",
+      image: "assets/products/driedFoods/1.jpg",
     },
     {
       id: 10,
       name: "Nachos",
       price: "$15.00",
-      image: "assets/products/snacksChips/2.webp",
+      image: "assets/products/driedFoods/2.jpg",
     },
     {
       id: 11,
       name: "Popcorn",
       price: "$7.00",
-      image: "assets/products/snacksChips/3.webp",
+      image: "assets/products/driedFoods/3.jpg",
     },
     {
       id: 12,
       name: "Pretzels",
       price: "$6.00",
-      image: "assets/products/snacksChips/4.webp",
+      image: "assets/products/driedFoods/4.jpg",
+    },
+  ],
+  "Fish & Meat": [
+    {
+      id: 13,
+      name: "Fish Fillet",
+      price: "$8.00",
+      image: "assets/products/fishMeat/1.jpg",
+    },
+    {
+      id: 14,
+      name: "Meat Steak",
+      price: "$15.00",
+      image: "assets/products/fishMeat/2.jpg",
+    },
+    {
+      id: 15,
+      name: "Salmon Fish",
+      price: "$7.00",
+      image: "assets/products/fishMeat/3.jpg",
+    },
+    {
+      id: 16,
+      name: "Fish & Meat",
+      price: "$6.00",
+      image: "assets/products/fishMeat/4.jpg",
+    },
+  ],
+  "Vegetables": [
+    {
+      id: 17,
+      name: "Vegetable Salad",
+      price: "$8.00",
+      image: "assets/products/vegetables/1.jpg",
+    },
+    {
+      id: 18,
+      name: "Vegetable basket",
+      price: "$15.00",
+      image: "assets/products/vegetables/2.jpg",
+    },
+    {
+      id: 19,
+      name: "Banana",
+      price: "$7.00",
+      image: "assets/products/vegetables/3.jpg",
+    },
+    {
+      id: 20,
+      name: "Lemon",
+      price: "$6.00",
+      image: "assets/products/vegetables/4.jpg",
     },
   ],
 };
@@ -86,7 +138,7 @@ const Products = () => {
   const [activeTab, setActiveTab] = useState("Food & Drinks");
 
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto mt-10 font-bold">
       <h1 className="text-center font-bold text-4xl mb-8">Our Products</h1>
 
       {/* Tabs */}
@@ -115,7 +167,6 @@ const Products = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="rounded-xl w-[200px] h-[200px] mx-auto"
               />
             </figure>
             <div className="card-body items-center text-center">

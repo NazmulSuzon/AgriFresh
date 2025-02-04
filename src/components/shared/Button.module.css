@@ -9,4 +9,5 @@
 .button:hover{
     box-shadow: inset 320px 0 0 0 white!important;
     color: black!important;
+    border: #80B500 solid 1px;
 }
