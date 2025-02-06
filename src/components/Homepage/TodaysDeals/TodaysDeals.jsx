@@ -15,11 +15,15 @@ const TodaysDeals = () => {
   }, [counter]);
 
   return (
-    <div className="grid grid-rows-1 grid-flow-col gap-8 my-20 mx-auto container font-serif">
-      <div className="w-[400px] h-[400px]">
-        <img src="../assets/hotDeals/honey.jpg" alt="honey" />
+    <div className="grid grid-rows-1 grid-flow-col gap-8 my-20 mx-auto container font-serif ">
+      <div>
+        <img
+          src="../assets/hotDeals/honey.jpg"
+          className="w-[700px] h-[700px]"
+          alt="honey"
+        />
       </div>
-      <div className="flex flex-col justify-center text-center gap-y-6">
+      <div className="flex flex-col justify-center text-center gap-y-8">
         <h1 className="text-3xl font-bold text-primary">Todays Hot Deals</h1>
         <p className="text-5xl font-bold">
           Orginal Stock Honey <br />
@@ -54,13 +58,17 @@ const TodaysDeals = () => {
         </div>
         {/* Count down finish */}
         <div className="mt-2 text-white">
-        <button>
-          <span className={styles.button}>Shop Now</span>
-        </button>
+          <button>
+            <span className={styles.button}>Shop Now</span>
+          </button>
         </div>
       </div>
-      <div className="w-[400px] h-[400px]">
-        <img src="assets/hotDeals/strawberry.jpg" alt="" />
+      <div>
+        <img
+          src="assets/hotDeals/strawberry.jpg"
+          alt=""
+          className="w-[700px] h-[700px]"
+        />
       </div>
     </div>
   );
